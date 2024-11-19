@@ -3,12 +3,12 @@ import Esercizi.esercizio2.Esercizio2;
 import Esercizi.esercizio3.Esercizio3;
 import Esercizi.esercizio4.Esercizio4;
 
-import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+
 
         //Esercizio 1
 
@@ -24,9 +24,7 @@ public class Main {
 
 
         //Esercizio 3
-        System.out.println("inserisci una stringa, :q per terminare il programma!");
-        String string = scanner.nextLine();
-        Esercizio3.spaceBetweenLetters(string);
+        Esercizio3.spaceBetweenLetters();
 
 
         //Esercizio 4
