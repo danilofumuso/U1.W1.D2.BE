@@ -12,10 +12,14 @@ public class Esercizio3 {
 
         System.out.println("inserisci una stringa, :q per terminare il programma!");
 
-        String string = "";
+        String string;
 
-        while (!string.equals(":q")) {
+        while (true) {
             string = scanner.nextLine();
+
+            if (string.equals(":q")) {
+                break;
+            }
 
             String result = String.join(",", string.split(""));
             System.out.println(result);
@@ -23,6 +27,6 @@ public class Esercizio3 {
         }
 
         System.out.println("Programma Terminato!");
-
+        scanner.close();
     }
 }
